@@ -7,14 +7,28 @@ module.exports = {
     filename: 'bundle.js',  // Name of generated bundle after build
     publicPath: '/' // public URL of the output directory when referenced in a browser
   },
-  module: {  // where we defined file patterns and their loaders
+  module: {
       rules: [
-        {
+          {
             test: /\.js$/,
             use: 'babel-loader',
             exclude: [
               /node_modules/
             ]
+        },
+          {
+              test: /\.html/,
+              loader: 'raw-loader'
+          },
+          {
+            test: /\.(sass|scss)$/,
+            use: [{
+                loader: "style-loader" // creates style nodes from JS strings
+            }, {
+                loader: "css-loader" // translates CSS into CommonJS
+            }, {
+                loader: "sass-loader" // compiles Sass to CSS
+            }]
           }
       ]
   },

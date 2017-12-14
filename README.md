@@ -23,6 +23,10 @@ yarn add webpack webpack-dev-server html-webpack-plugin -D
 ```
 yarn add babel-core babel-loader babel-preset-env -D
 ```
+## Add sass-loader (Allow us to use scss styling)
+```
+yarn add raw-loader sass-loader node-sass css-loader style-loader -D
+```
 # Project Structure
 
 - **src**: Main project container.
