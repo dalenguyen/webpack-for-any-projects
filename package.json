@@ -1,0 +1,9 @@
+{
+  "name": "webpack-for-any-projects",
+  "version": "1.0.0",
+  "description": "How to setup webpack for any projects",
+  "main": "index.js",
+  "repository": "https://github.com/dalenguyen/webpack-for-any-projects.git",
+  "author": "Dale Nguyen",
+  "license": "MIT"
+}
