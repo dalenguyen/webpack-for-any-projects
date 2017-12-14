@@ -5,5 +5,10 @@
   "main": "index.js",
   "repository": "https://github.com/dalenguyen/webpack-for-any-projects.git",
   "author": "Dale Nguyen",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "html-webpack-plugin": "^2.30.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
+  }
 }
