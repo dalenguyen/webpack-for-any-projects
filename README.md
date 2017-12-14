@@ -28,4 +28,4 @@ yarn add webpack webpack-dev-server html-webpack-plugin -D
 - **src/app/index.js**: Main entry point into our project.
 - **src/public/index.html**: Main project template.
 
-* This git follows instructions from [Scotch.io](https://scotch.io/tutorials/setting-up-webpack-for-any-project) *
+*This git follows instructions from [Scotch.io](https://scotch.io/tutorials/setting-up-webpack-for-any-project)*
