@@ -7,7 +7,7 @@
   "author": "Dale Nguyen",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --history-api-fallback --inline --progress"
+    "start": "webpack-dashboard -- webpack-dev-server --history-api-fallback --inline --progress"
   },
   "devDependencies": {
     "angular": "^1.6.7",
@@ -25,6 +25,7 @@
     "webpack-dev-server": "^2.9.7"
   },
   "dependencies": {
-    "dotenv": "^4.0.0"
+    "dotenv": "^4.0.0",
+    "webpack-dashboard": "^1.0.2"
   }
 }

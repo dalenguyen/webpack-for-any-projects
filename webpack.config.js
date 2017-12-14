@@ -2,6 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin'); // Require  html-webpa
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const webpack = require('webpack');
 require('dotenv').config();
+const DashboardPlugin = require('webpack-dashboard/plugin');
 
 module.exports = {
   entry: __dirname + "/src/app/index.js", // webpack entry point. Module to start building dependency graph
@@ -43,7 +44,8 @@ module.exports = {
       new ExtractTextPlugin("styles.css"), // extract css to a separate file called styles.css
       new webpack.DefinePlugin({
           API_KEY: JSON.stringify(process.env.API_KEY)
-      })
+      }),
+      new DashboardPlugin()
   ],
   devServer: {  // configuration for webpack-dev-server
       contentBase: './src/public',  //source of static assets

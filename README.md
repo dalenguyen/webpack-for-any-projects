@@ -35,6 +35,10 @@ yarn add extract-text-webpack-plugin -D
 ```
 yarn add dotenv -D
 ```
+## Add webpack-dashboar for webpack-dev-server
+```
+yarn add webpack-dashboard -D
+```
 
 # Project Structure
 
