@@ -40,6 +40,11 @@ yarn add dotenv -D
 yarn add webpack-dashboard -D
 ```
 
+# Control Development Environments
+```
+yarn add copy-webpack-plugin uglifyjs-webpack-plugin -D
+```
+
 # Project Structure
 
 - **src**: Main project container.
