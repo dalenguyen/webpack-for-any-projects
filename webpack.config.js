@@ -1,4 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // Require  html-webpack-plugin plugin
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const webpack = require('webpack');
+require('dotenv').config();
 
 module.exports = {
   entry: __dirname + "/src/app/index.js", // webpack entry point. Module to start building dependency graph
@@ -36,6 +39,10 @@ module.exports = {
       new HtmlWebpackPlugin({
           template: __dirname + "/src/public/index.html",
           inject: 'body'
+      }),
+      new ExtractTextPlugin("styles.css"), // extract css to a separate file called styles.css
+      new webpack.DefinePlugin({
+          API_KEY: JSON.stringify(process.env.API_KEY)
       })
   ],
   devServer: {  // configuration for webpack-dev-server

@@ -27,6 +27,15 @@ yarn add babel-core babel-loader babel-preset-env -D
 ```
 yarn add raw-loader sass-loader node-sass css-loader style-loader -D
 ```
+## Add extract-text-webpack-plugin (Extracts text from a bundle, or bundles, into a separate file)
+```
+yarn add extract-text-webpack-plugin -D
+```
+## Add DefinePlugin to create global constants
+```
+yarn add dotenv -D
+```
+
 # Project Structure
 
 - **src**: Main project container.
